@@ -75,4 +75,17 @@ function averageNumbers(numbers2) {
 // Iteration 5 | Find Elements
 const words2 = ["machine", "subset", "trouble", "starting", "matter", "eating", "truth", "disobedience"];
 
-function doesWordExist() {}
+function doesWordExist(words, word) {
+    if (words.length === 0 || word.length === 0) {
+        return null;
+    }
+
+    let exist = false;
+    for (let i = 0; i < words.length; i++) {
+        let palabra = words[i];
+        if (palabra === word) {
+            exist = true;
+        }
+    }
+    return exist;
+}

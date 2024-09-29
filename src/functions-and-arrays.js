@@ -40,7 +40,16 @@ function findLongestWord(words) {
 // Iteration 3 | Sum Numbers
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-function sumNumbers() {}
+function sumNumbers(numbers) {
+    let suma = 0;
+    
+    for (let i = 0; i < numbers.length; i++) {
+        let numAux = numbers[i];
+        suma = suma + numAux;
+    }
+
+    return suma;
+}
 
 
 
@@ -48,7 +57,17 @@ function sumNumbers() {}
 // Iteration 4 | Numbers Average
 const numbers2 = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers() {}
+function averageNumbers(numbers2) {
+    if (numbers2.length === 0) {
+        return 0;
+    }
+    
+    let suma = sumNumbers(numbers2);
+    let divisor = numbers2.length;
+
+    return (suma / divisor);
+    
+}
 
 
 
